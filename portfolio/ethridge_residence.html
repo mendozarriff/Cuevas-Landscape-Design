@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="../img/saul-logo.png" type="image/png" sizes="16x16">
+      <title>Cuevas Landscape Design | Landscape Architect</title>
+      <script type="text/javascript" src="../script/script.js" async></script>
+      <script type="text/javascript" src="../script/portfolio.js" async></script>
+      <link rel="stylesheet" href= "../css/normalize.css">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../css/main.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+    </head>
+  <body>
+    <header>
+      <!--this div wraps around the menu bar, the companies logo, and companies statement -->
+      <div id="top-wrapper">
+        <div id="responsive-menu">
+          <nav class="nav">
+            <!-- this function opens up the menu botton -->
+            <button onclick="menu()" class="dropbtn">
+              &#9776;
+            </button>
+          </nav>
+        </div>
+        <!-- div is hidden by default, opens up with the botton obove clicked -->
+        <div id="hidden-menu"  class="mobile-menu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects-title"><span>&#8681;</span>Portfolio</a></li>
+            <li><a href="../portfolio/chisholm_residence.html">Chisholm Residence</a></li>
+            <li><a href="../portfolio/ditullo_residence.html">Ditullo Residence</a></li>
+            <li><a href="../portfolio/ethridge_residence.html">Ethridge Residence</a></li>
+            <li><a href="../portfolio/hullings.html">Hullings Residence</a></li>
+            <li><a href="../portfolio/lischke.html">Lischke Residence</a></li>
+            <li><a href="../portfolio/weiss_residence.html">Weiss Residence</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- section is hidden on mobile, and displayed on desktop -->
+        <section class="full-desktop-menu">
+          <div id="company-logo">
+            <a href="../index.html"><img src="../img/saul-logo.png" alt="Cuevas logo"></a>
+            <div id="responsive-top">
+              <h1>CUEVAS</h1>
+              <div id="line"></div>
+              <h2>LANDSCAPE DESIGN</h2>
+            </div>
+          </div>
+        </section>
+        <!-- section is hidden on mobile, and displayed on desktop -->
+        <div class="desktop-menu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li id="projects-div" onmouseover="displayProjects()" onmouseout="hideProjects()">
+              <a href="../index.html#projects-title" ><span id="changeme">+</span><strong>Portfolio</strong></a>
+            </li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div id="project-list" onmouseover="displayProjects()" onmouseout="hideProjects()" >
+            <ul>
+              <li><a href="../portfolio/chisholm_residence.html" >Chisholm Residence </a>|</li>
+              <li><a href="../portfolio/ditullo_residence.html">Ditullo Residence </a>|</li>
+              <li><a href="../portfolio/ethridge_residence.html">Ethridge Residence </a>|</li>
+              <li><a href="../portfolio/hullings.html">Hullings Residence </a>|</li>
+              <li><a href="../portfolio/lischke.html">Lischke Residence </a>|</li>
+              <li><a href="../portfolio/weiss_residence.html">Weiss Residence</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section>
+        <!-- previous and next project bar -->
+        <div id="next-project-bar">
+          <div id="previous-project"><a href="ditullo_residence.html"><h2>&larr; Previous Project</h2></a></div>
+          <div id="next-project"><a href="hullings.html"><h2>Next Project &rarr;</h2></a></div>
+        </div>
+        <!-- title of project -->
+        <div id="projects-title" class="project-title">
+          <h2>Ethridge Residence</h2>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- slideshow window -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-main.jpg" alt="ethridge-residence image 1" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-1.jpg" alt="ethridge-residence image 2" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-2.jpg" alt="ethridge-residence image 3" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-3.jpg" alt="ethridge-residence image 4" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-4.jpg" alt="ethridge-residence image 5" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-5.jpg" alt="ethridge-residence image 6" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-6.jpg" alt="ethridge-residence image 7" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-7.jpg" alt="ethridge-residence image 8" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-8.jpg" alt="ethridge-residence image 9" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-9.jpg" alt="ethridge-residence image 10" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-10.jpg" alt="ethridge-residence image 11" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-11.jpg" alt="ethridge-residence image 12" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-12.jpg" alt="ethridge-residence image 13" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-13.jpg" alt="ethridge-residence image 14" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div ></div>
+          <img src="img/ethridge_residence/ethridge_residence-14.jpg" alt="ethridge-residence image 15" style="width:100%">
+        </div>
+        <!-- previous and next image arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <!-- dots on bottom of slideshow (only visible om mobile) -->
+      <div id="mobile-slide-container" style="text-align:center">
+        <span class="mobile-slide-show" onclick="currentSlide(1)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(2)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(3)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(4)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(5)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(6)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(7)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(8)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(9)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(10)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(11)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(12)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(13)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(14)"></span>
+        <span class="mobile-slide-show" onclick="currentSlide(15)"></span>
+      </div>
+      <!-- thumbnails of images linked to slideshow above(only shows on desktop) -->
+      <div id="desktop-slide-container" style="text-align:center">
+        <span onclick="currentSlide(1)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-main.jpg" alt="ethridge-residence image 1" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(2)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-1.jpg" alt="ethridge-residence image 2" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(3)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-2slide.jpg" alt="ethridge-residence image 3" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(4)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-3.jpg" alt="ethridge-residence image 4" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(5)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-4.jpg" alt="ethridge-residence image 5" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(6)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-5.jpg" alt="ethridge-residence image 6" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(7)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-6.jpg" alt="ethridge-residence image 7" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(8)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-7.jpg" alt="ethridge-residence image 8" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(9)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-8slide.jpg" alt="ethridge-residence image 9" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(10)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-9.jpg" alt="ethridge-residence image 10" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(11)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-10.jpg" alt="ethridge-residence image 11" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(12)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-11.jpg" alt="ethridge-residence image 12" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(13)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-12.jpg" alt="ethridge-residence image 13" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(14)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-13.jpg" alt="ethridge-residence image 14" style="height: 500px width: 500px">
+        </span>
+        <span onclick="currentSlide(15)" class="desktop-slide-show">
+          <img src="img/ethridge_residence/ethridge_residence-14slide.jpg" alt="ethridge-residence image 15" style="height: 500px width: 500px">
+        </span>
+      </div>
+      <section>
+        <!-- discription of project -->
+        <div id="page-description-section">
+          <h2>Ethridge Residence</h2>
+          <p>Our client wanted to bring natural elements without the
+            maintenance associated so we used synthetic turf in the entertainment area.
+            Contemporary furniture was used in this Golden Hill property to create a
+            multi-use and functional space. To add a relaxing atmosphere to the backyard,
+            we installed a water feature as well as turf panels into the fence.
+            Balance and harmony are the features of this design.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id ="footer-wrapper">
+        <!-- this div is used to place a max width of 1900px in desktop -->
+      <div id="bottom-wrapper">
+        <!-- companies bottom logo -->
+        <div id="bottom-logo">
+          <a href="../index.html"><img src="../img/saul-logo-white.png" alt="Cuevas white logo"></a>
+          <div id=logo-text>
+            <h2>CUEVAS</h2>
+            <div id="bottom-line"></div>
+            <h3>LANDSCAPE DESIGN</h3>
+          </div>
+        </div>
+        <!-- companies email -->
+          <div id="email">
+            <a href="mailto:luascvs@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+            <p>luascvs@gmail.com</p>
+            </a>
+          </div>
+          <!-- companies social section -->
+          <div id="social">
+            <a href="http://www.facebook.com" target="_blank"><div class="circles"><i class="fa fa-facebook-official" aria-hidden="true"></i></div></a>
+            <a href="http://www.instagram.com" target="_blank"><div class="circles"><i class="fa fa-instagram" aria-hidden="true"></i></div></a>
+          </div>
+        </div>
+        <!-- bottom menu only displays in desktop -->
+      <div id="bottom-menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#projects-title" style="color:white"><strong>Portfolio</strong></a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div id="copy">
+        <p >&copy; 2017 Saul Cuevas</p>
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>

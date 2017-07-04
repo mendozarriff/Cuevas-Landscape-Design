@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/saul-logo.png" type="image/png" sizes="16x16">
+    <title>Cuevas Landscape Design | Landscape Architect</title>
+    <script type="text/javascript" src="script/script.js" async></script>
+    <link rel="stylesheet" href= "css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+    <body>
+      <header>
+        <div id="top-wrapper">
+          <nav class="nav">
+            <button onclick="menu()" class="dropbtn">
+              &#9776;
+            </button>
+          </nav>
+          <!-- div is hidden by default, opens up with the botton obove clicked -->
+          <div id="hidden-menu"  class="mobile-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#projects-title"><span>&#8681;</span>Portfolio</a></li>
+              <li><a href="portfolio/chisholm_residence.html">Chisholm Residence</a></li>
+              <li><a href="portfolio/ditullo_residence.html">Ditullo Residence</a></li>
+              <li><a href="portfolio/ethridge_residence.html">Ethridge Residence</a></li>
+              <li><a href="portfolio/hullings.html">Hullings Residence</a></li>
+              <li><a href="portfolio/lischke.html">Lischke Residence</a></li>
+              <li><a href="portfolio/weiss_residence.html">Weiss Residence</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- section is hidden on mobile, and displayed on desktop -->
+            <section class="full-desktop-menu">
+              <div id="company-logo">
+                <a href="index.html"><img src="img/saul-logo.png" alt="Cuevas logo"></a>
+                <div id="responsive-top">
+                  <h1>CUEVAS</h1>
+                  <div id="line"></div>
+                  <h2>LANDSCAPE DESIGN</h2>
+                </div>
+              </div>
+            </section>
+          <div id="gradient-line"></div>
+          <div class="desktop-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li id="projects-div" onmouseover="displayProjects()" onmouseout="hideProjects()">
+                <a href="index.html#projects-title" ><span id="changeme">+</span>Portfolio</a>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html"><strong>Contact</strong></a></li>
+            </ul>
+            <div id="project-list" onmouseover="displayProjects()" onmouseout="hideProjects()">
+              <ul>
+                <li><a href="portfolio/chisholm_residence.html" >Chisholm Residence </a>|</li>
+                <li><a href="portfolio/ditullo_residence.html">Ditullo Residence </a>|</li>
+                <li><a href="portfolio/ethridge_residence.html">Ethridge Residence </a>|</li>
+                <li><a href="portfolio/hullings.html">Hullings Residence </a>|</li>
+                <li><a href="portfolio/lischke.html">Lischke Residence </a>|</li>
+                <li><a href="portfolio/weiss_residence.html">Weiss Residence</a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="desktop-bar"></div>
+      </div>
+      <div id="projects-title">
+        <h2>CONTACT</h2>
+      </div>
+    </header>
+    <main>
+      <div id="contact">
+        <img src="img/contact-image.jpg" alt="contact image">
+      </div>
+      <h2 id="contact-title">
+        Contact Details
+      </h2>
+      <div id="contact-details">
+        <p>For pricing and more information
+          please contact me at the email provided below
+        </p>
+        <h2>email</h2>
+        <a href="mailto:luascvs@gmail.com">luascvs@gmail.com</a>
+      </div>
+    </main>
+    <footer>
+      <div id ="footer-wrapper">
+        <div id="bottom-wrapper">
+          <div id="bottom-logo">
+            <a href="index.html"><img src="img/saul-logo-white.png" alt="Cuevas white logo"></a>
+            <div id=logo-text>
+              <h2>CUEVAS</h2>
+              <div id="bottom-line"></div>
+              <h3>LANDSCAPE DESIGN</h3>
+            </div>
+          </div>
+          <div id="email">
+            <a href="mailto:luascvs@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+            <p>luascvs@gmail.com</p>
+            </a>
+          </div>
+          <div id="social">
+            <a href="http://www.facebook.com" target="_blank"><div class="circles"><i class="fa fa-facebook-official" aria-hidden="true"></i></div></a>
+            <a href="http://www.instagram.com" target="_blank"><div class="circles"><i class="fa fa-instagram" aria-hidden="true"></i></div></a>
+          </div>
+        </div>
+        <div id="bottom-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#projects-title">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" style="color:white"><strong>Contact</strong></a></li>
+          </ul>
+        </div>
+        <div id="copy">
+          <p >&copy; 2017 Saul Cuevas</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

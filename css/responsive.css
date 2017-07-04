@@ -1,0 +1,368 @@
+
+/*******************************************************************************
+                        SCREENS BIGGER THAN 968PX
+*******************************************************************************/
+@media only screen and (min-width: 968px){
+/*******************************************************************************
+                                    HOMEPAGE
+*******************************************************************************/
+  header{
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+  }
+
+  .nav, nav, button{display: none;}
+
+  .mobile-menu{display: none;}
+
+  .full-desktop-menu{
+    width: 49%;
+    display: inline-block;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  /*****Company Logo******/
+  #company-logo{
+    display: inline-block;
+    margin: 2% 50% 0 0%;
+    width: 250px;
+  }
+  #company-logo img{
+    display: inline-block;
+    width: 50px;
+    height: auto;
+  }
+
+  #responsive-top{
+    display: inline-block;
+    width: 160px;
+    padding-bottom: 7px;
+  }
+
+  #responsive-top h1{
+    font-size: 2.1em;
+    letter-spacing: 3px;
+    height: 29px;
+  }
+  #responsive-top h2{
+    height: 10px;
+    font-size: 1em;
+  }
+  #responsive-top span{
+    font-size: 1.5em;
+  }
+
+  #line{
+    margin-top: 1px;
+    margin-bottom: 3px;
+    width: 130px;
+  }
+
+  #gradient-line{
+    display: none;
+  }
+
+  .desktop-menu{
+    display: inline-block;
+    width: 49%;
+    background: none;
+    box-shadow: none;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 2%;
+    vertical-align: top;
+    z-index: 0;
+    position: relative;
+    word-spacing: 25px;
+    letter-spacing: 4px;
+  }
+  .desktop-menu a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .desktop-menu a:hover{color: #009999;}
+
+  .desktop-menu span{font-size: 1em;}
+
+  .desktop-menu li{display: inline;}
+
+  #projects-div{
+    display: inline-block;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+  }
+
+  #project-list ul li a:link{text-decoration: none;}
+
+  #project-list ul li a{color: white}
+
+  #project-list a:hover{color: #009999;}
+
+  #project-list{
+    display: none;
+    font-size: .95em;
+    word-spacing: 3px;
+    background: black;
+    height: auto;
+    font-family: sans-serif;
+    margin-top: 0;
+    padding: 10px 15px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: white;
+    opacity: .5;
+  }
+  #desktop-bar{
+    display: block;
+    width: 100%;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #e6e6e6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #e6e6e6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #e6e6e6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #e6e6e6); /* Standard syntax (must be last) */
+  }
+  #company-statement h3{
+    font-size: 2em;
+    letter-spacing: 15px;
+  }
+
+  #top-line-1{
+    width: 33%;
+    height:9px;
+    border-top: 2px solid #009999;
+    margin-left: 20%;
+  }
+  #top-line-2{
+    width: 33%;
+    height:10px;
+    border-bottom: 2px solid #009999;
+    margin: 0 0 2px 48%;
+  }
+
+  #projects-title h3{letter-spacing: 5px;}
+
+  #list-of-projects{
+    max-width: 1900px;
+    margin: 0 auto;
+    display:block;
+    border-bottom: none;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+  }
+
+  .project-container{
+    width: 33.3%;
+    padding: 0;
+    display: inline-block;
+    border: none;
+    font-size: 12px;
+  }
+
+  .project-container img{
+    display: block;
+    opacity: .7;
+    filter: alpha(opacity=70);
+  }
+  .project-container h2{
+    margin-top: 5px;
+  }
+  .project-container img:hover{
+      -webkit-transition: all 900ms ease;
+      -moz-transition: all 900ms ease;
+      -ms-transition: all 900ms ease;
+      -o-transition: all 900ms ease;
+      transition: all 900ms ease;
+      opacity: 1;
+      filter: alpha(opacity=100);
+  }
+
+  .all-project-names{
+    display: none;
+  }
+  .all-project-names:hover{
+    opacity: 1;
+    -webkit-transition: all 900ms ease;
+    -moz-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+    transition: all 900ms ease;
+  }
+
+  .half{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  #services-list{
+    display: inline-block;
+    width: 46%;
+    padding: 0 2% 0 2%;
+    margin: 0 auto 0 1%;
+  }
+
+
+  #bottom-wrapper{
+    display: inline-block;
+    width: 48%;
+  }
+
+  #bottom-menu{
+    display: inline-block;
+    width: 50%;
+    margin-top: 20px;
+    height: 200px;
+    vertical-align: top;
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    line-height: 53px;
+    border-left: 2px solid lightgray;
+    margin-bottom: 4px;
+
+  }
+  #bottom-menu ul{
+    word-spacing: 5px;
+  }
+  #bottom-menu li{
+    list-style-type: none;
+
+
+  }
+  #bottom-menu a, #bottom-menu a:link{
+    text-decoration: none;
+    color: lightgray;
+  }
+
+
+  #bottom-menu a:hover{
+    color: white;
+    font-weight: bolder;
+  }
+
+/*******************************************************************************
+                                  PORTFOLIO PAGES
+*******************************************************************************/
+
+  #next-project-bar{
+    text-align: left;
+  }
+
+  .slideshow-container{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .prev, .next{
+    font-size: 35px;
+  }
+
+  #mobile-slide-container{
+    display: none;
+  }
+  .mobile-slide-show{
+    display: none
+  }
+
+  #desktop-slide-container{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .desktop-slide-show{
+    opacity: .7;
+    transition: opacity 0.6s ease;
+    margin: 2px;
+    display: inline-block;
+    cursor:pointer;
+    width: auto;
+    height: auto;
+
+  }
+  .desktop-slide-show img {
+    max-width: 120px;
+    max-height: 80px;
+  }
+  .active, .desktop-slide-show:hover {
+    opacity: 1;
+  }
+
+/******************************************************************************
+                                ABOUT PAGE
+*******************************************************************************/
+  #about-cuevas{
+    margin: 5px auto;
+    padding: 2px 0;
+    text-align: center;
+
+  }
+  #about-cuevas p{
+    width: 95%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px 2px;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 25px;
+    word-spacing: 1px;
+  }
+
+/******************************************************************************
+                                CONTACT PAGE
+*******************************************************************************/
+
+  #address{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    height: 140px;
+    color: black;
+  }
+  #phone{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    height: 140px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*****HOMEPAGE Company all-project-names******/
+
+
+
+/********Footer**********/
+
+
+
+
+
+
+
+}
